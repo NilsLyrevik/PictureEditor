@@ -1,26 +1,31 @@
-# Compiler
+# Compiler and flags
 CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra -O2 -Wno-deprecated-declarations -Wno-missing-field-initializers
 
-# Compiler flags
-CXXFLAGS = -Wall -Wextra -std=c++17
+# Source and object files
+SRCS = main.cpp loadimage.cpp saveimage.cpp
+OBJS = $(SRCS:.cpp=.o)
 
-# Output program name
+# Target executable
 TARGET = main
-
-# Source files
-SRC = main.cpp
 
 # Default rule
 all: $(TARGET)
 
-# How to build the target
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+# Compile object files
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-# Clean rule to remove compiled files
+# Link
+$(TARGET): $(OBJS)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(TARGET)
+
+# Clean objects and executable
 clean:
-	rm -f $(TARGET)
+	rm -f $(OBJS) $(TARGET)
 
-# Optional: run rule to compile and execute in one step
-run: all
-	./$(TARGET)
+# Run program
+# Usage: make run INPUT=../testpictures/volcano.png
+run: $(TARGET)
+	@mkdir -p result
+	./$(TARGET) $(INPUT) result/output.png
