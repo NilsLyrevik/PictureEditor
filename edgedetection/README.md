@@ -33,7 +33,7 @@ make
 
 To process an image:
 
-make run INPUT=../testpictures/volcano.png or <PATH_TO_PNG>
+make run INPUT=../testpictures/volcano.png or <PATH_TO_PNG> [COLOR=true] (use this flag for colored sobel output)
 
 The output will be written to:
 

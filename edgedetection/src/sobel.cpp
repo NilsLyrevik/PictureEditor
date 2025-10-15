@@ -18,7 +18,7 @@ The idea is to convert the image in diffrent steps:
 #include "gaussianblur.h"
 #include "mathutils.h"
 
-void sobelfilter(unsigned char* data, int width, int height, int channels){
+void sobelfilter(unsigned char* data, int width, int height, int channels, bool colorflag){
 
     //this is what will be applied to every pixel (around every pixel)
     float xkernel[3][3] = {
@@ -52,14 +52,32 @@ void sobelfilter(unsigned char* data, int width, int height, int channels){
                     int nidx = (ny * width + nx) * channels;
 
                     gx += xkernel[ky + 1][kx + 1] * original[nidx];
-                    gx += xkernel[ky + 1][kx + 1] * original[nidx];
+                    gy += ykernel[ky + 1][kx + 1] * original[nidx];
                 }
             }
+            
             float magnitude = std::abs(gx) + std::abs(gy); // should be sqrt(gx*gx + gy*gy) but this is more nicer to the computer
             int idx = (y* width + x) * channels;
-            data[idx] = static_cast<unsigned char>(clamp_float(magnitude, 0.0f, 255.0f));
-            data[idx + 1] = static_cast<unsigned char>(clamp_float(magnitude, 0.0f, 255.0f));
-            data[idx + 2] = static_cast<unsigned char>(clamp_float(magnitude, 0.0f, 255.0f));
+
+            if (colorflag){
+
+                float scale = std::min(magnitude / 255.0f, 1.0f);
+                float angle = atan2(gy, gx);
+                
+                // Convert normalized angle to color
+                unsigned char r = static_cast<unsigned char>(255 * fabs(cos(angle)));
+                unsigned char g = static_cast<unsigned char>(255 * fabs(sin(angle)));
+                unsigned char b = static_cast<unsigned char>(255 * fabs(cos(angle) - sin(angle)));
+                
+                data[idx]     = static_cast<unsigned char>(r * scale);
+                data[idx + 1] = static_cast<unsigned char>(g * scale);
+                data[idx + 2] = static_cast<unsigned char>(b * scale);
+            } else {
+                //this is the grayscaled version
+                 data[idx] = static_cast<unsigned char>(clamp_float(magnitude, 0.0f, 255.0f));
+                data[idx + 1] = static_cast<unsigned char>(clamp_float(magnitude, 0.0f, 255.0f));
+                data[idx + 2] = static_cast<unsigned char>(clamp_float(magnitude, 0.0f, 255.0f));
+            }
         }
     }
 }

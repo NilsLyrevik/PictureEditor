@@ -1,47 +1,51 @@
-# Compiler settings
-CXX = g++
-CXXFLAGS = -std=c++17 -O2 -w
+# --- Compiler and flags ---
+CXX := g++
+CXXFLAGS := -std=c++17 -O2 -Wall -Wextra
 
-# Paths
-SRC_DIR = src
-OBJ_DIR = obj
-BIN = edgedetect
-RESULT_DIR = result
+# --- Paths ---
+SRC_DIR := src
+OBJ_DIR := obj
+RESULT_DIR := result
+BIN := main
 
-# Gather source and object files
-SRC = $(wildcard $(SRC_DIR)/*.cpp)
-OBJ = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
+# --- Files ---
+SRCS := $(wildcard $(SRC_DIR)/*.cpp)
+OBJS := $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
-# Default target
+# --- Arguments ---
+INPUT ?= ../testpictures/volcano.png
+OUTPUT := $(RESULT_DIR)/output.png
+COLOR ?= false
+
+# --- Rules ---
 all: $(BIN)
 
-# Build the main executable
-$(BIN): $(OBJ)
-	@$(CXX) $(CXXFLAGS) -o $@ $^
-	@echo "✅ Build complete!"
+$(BIN): $(OBJS)
+	@echo "Linking..."
+	$(CXX) $(CXXFLAGS) $^ -o $@
+	@echo "Build complete."
 
-# Compile each .cpp to .o file
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp | $(OBJ_DIR)
-	@$(CXX) $(CXXFLAGS) -c $< -o $@
+	@echo "Compiling $<..."
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-# Create obj directory if it doesn't exist
 $(OBJ_DIR):
-	@mkdir -p $(OBJ_DIR)
+	mkdir -p $(OBJ_DIR)
 
-# Run the program
-# Usage: make run INPUT=../testpictures/volcano.png
 run: $(BIN)
-	@if [ -z "$(INPUT)" ]; then \
-		echo "Usage: make run INPUT=<path_to_image>"; \
-	else \
-		mkdir -p $(RESULT_DIR); \
-		./$(BIN) $(INPUT) $(RESULT_DIR)/output.png; \
-	fi
+	@mkdir -p $(RESULT_DIR)
+ifeq ($(COLOR),true)
+	@echo "Running in COLOR mode..."
+	./$(BIN) $(INPUT) $(OUTPUT) --color
+else
+	@echo "Running in GRAYSCALE mode..."
+	./$(BIN) $(INPUT) $(OUTPUT)
+endif
 
-# Clean up build files and generated images
 clean:
-	@rm -rf $(OBJ_DIR) $(BIN)
-	@rm -f $(RESULT_DIR)/*.png
-	@echo "🧹 Cleaned build files and result images!"
+	@echo "Cleaning build files and results..."
+	rm -rf $(OBJ_DIR) $(BIN)
+	rm -f $(RESULT_DIR)/*.png
+	@echo "Clean complete."
 
 .PHONY: all run clean
