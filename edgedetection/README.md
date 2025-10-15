@@ -21,7 +21,7 @@ This project performs basic edge detection using a simple image-processing pipel
 1. Load Image – Reads an image using stb_image.
 2. Grayscale Conversion – Converts RGB images to grayscale using the luminosity method.
 3. Gaussian Blur – Applies a 3x3 Gaussian filter to reduce noise.
-4. Sobel Operator (upcoming) – Detects edges by computing image gradients.
+4. Sobel Operator – Detects edges by computing image gradients.
 
 ## Build Instructions
 
@@ -33,7 +33,7 @@ make
 
 To process an image:
 
-make run INPUT=../testpictures/volcano.png
+make run INPUT=../testpictures/volcano.png or <PATH_TO_PNG>
 
 The output will be written to:
 
