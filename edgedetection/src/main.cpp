@@ -15,6 +15,7 @@ The idea is to convert the image in diffrent steps:
 #include "saveimage.h"
 #include "grayscale.h"
 #include "gaussianblur.h"
+#include "sobel.h"
 #include <iostream>
 
 int main(int argc, char* argv[]) {
@@ -28,9 +29,10 @@ int main(int argc, char* argv[]) {
     unsigned char* data = loadimage(argv[1], width, height, channels);
     if (!data) return 1;
 
-    //METHODS/ FUNCTIONS FOR EDITING HERE!!!!
+    //METHODS/ FUNCTIONS FOR EDITING HERE!!!! 
     grayscale(data, width, height, channels);
     gaussianblur(data, width, height, channels);
+    sobelfilter(data, width, height, channels);
 
     // SAVE IMAGE
     if (!saveimage(argv[2], data, width, height, channels)) {

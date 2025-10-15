@@ -3,18 +3,7 @@
 #include <cmath>
 #include <iterator>
 #include "gaussianblur.h"
-
-int clamp_int(int input ,int low, int high){ // helper since std::clamp didnt work
-    if (input > high) return high;
-    if (input < low)  return low;
-    else              return input;
-}
-
-int clamp_float(float input ,float low, float high){ // helper since std::clamp didnt work (look into combining these as the same function maybe?)
-    if (input > high) return high;
-    if (input < low)  return low;
-    else              return input;
-}
+#include "mathutils.h"
 
 void gaussianblur(unsigned char* data, int width, int height, int channels){
 
