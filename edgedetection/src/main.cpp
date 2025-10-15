@@ -14,6 +14,7 @@ The idea is to convert the image in diffrent steps:
 #include "loadimage.h"
 #include "saveimage.h"
 #include "grayscale.h"
+#include "gaussianblur.h"
 #include <iostream>
 
 int main(int argc, char* argv[]) {
@@ -29,6 +30,7 @@ int main(int argc, char* argv[]) {
 
     //METHODS/ FUNCTIONS FOR EDITING HERE!!!!
     grayscale(data, width, height, channels);
+    gaussianblur(data, width, height, channels);
 
     // SAVE IMAGE
     if (!saveimage(argv[2], data, width, height, channels)) {
