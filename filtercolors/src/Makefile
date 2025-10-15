@@ -21,18 +21,18 @@ all: $(TARGET)
 $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $(TARGET)
 
-# Run with custom input (usage: make run INPUT=../testpictures/volcano.png)
+# Run with custom input (usage: make run INPUT=../../testpictures/volcano.png)
 run: $(TARGET)
-	@mkdir -p result
+	@mkdir -p ../result
 	@if [ -z "$(INPUT)" ]; then \
 		echo "Usage: make run INPUT=<path_to_image>"; \
 	else \
-		./$(TARGET) $(INPUT) result/output.png; \
+		./$(TARGET) $(INPUT) ../result/output.png; \
 	fi
 
 # Clean up compiled files and output images
 clean:
 	rm -f $(OBJS) $(TARGET)
-	rm -f result/*
+	rm -f ../result/*
 
 .PHONY: all run clean
