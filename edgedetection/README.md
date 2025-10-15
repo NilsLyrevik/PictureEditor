@@ -3,7 +3,7 @@
 This project performs basic edge detection using a simple image-processing pipeline written in C++.
 
 ## Folder Structure
-
+´´´
  ├──edgedetection/
  │  ├── result/              # Output images are saved here
  │  ├── src/                 # Source code files
@@ -12,9 +12,9 @@ This project performs basic edge detection using a simple image-processing pipel
  │      ├── saveimage.cpp / .h
  │      ├── grayscale.cpp / .h
  │      ├── gaussianblur.cpp
- │      └── sobel.cpp        # (to be implemented)
+ │      └── sobel.cpp        # (to be implemented )
  └──stb_image/        # External STB image libraries
-
+´´´
 ## Pipeline Overview
 
 1. Load Image – Reads an image using stb_image.
