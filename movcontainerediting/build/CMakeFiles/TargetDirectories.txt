@@ -1,0 +1,3 @@
+/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles/main.dir
+/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles/edit_cache.dir
+/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles/rebuild_cache.dir
