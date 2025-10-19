@@ -4,5 +4,11 @@
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/main.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/main.cpp",
   "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/main.cpp",
   "output": "CMakeFiles/main.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/loadwritevideo.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/loadwritevideo.cpp",
+  "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/loadwritevideo.cpp",
+  "output": "CMakeFiles/main.dir/src/loadwritevideo.cpp.o"
 }
 ]

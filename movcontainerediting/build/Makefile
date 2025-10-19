@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/loadwritevideo.o: src/loadwritevideo.cpp.o
+.PHONY : src/loadwritevideo.o
+
+# target to build an object file
+src/loadwritevideo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/loadwritevideo.cpp.o
+.PHONY : src/loadwritevideo.cpp.o
+
+src/loadwritevideo.i: src/loadwritevideo.cpp.i
+.PHONY : src/loadwritevideo.i
+
+# target to preprocess a source file
+src/loadwritevideo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/loadwritevideo.cpp.i
+.PHONY : src/loadwritevideo.cpp.i
+
+src/loadwritevideo.s: src/loadwritevideo.cpp.s
+.PHONY : src/loadwritevideo.s
+
+# target to generate assembly for a file
+src/loadwritevideo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/loadwritevideo.cpp.s
+.PHONY : src/loadwritevideo.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/loadwritevideo.o"
+	@echo "... src/loadwritevideo.i"
+	@echo "... src/loadwritevideo.s"
 .PHONY : help
 
 
