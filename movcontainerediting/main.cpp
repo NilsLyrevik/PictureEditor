@@ -3,31 +3,37 @@
 
 int main(int argc, char** argv) {
     if (argc < 2) {
-        std::cerr << "Usage: " << argv[0] << " <video_file.mov>" << std::endl;
-        return 1;
+        std::cout << "Usage: " << argv[0] << " <video-file>" << std::endl;
+        return -1;
     }
 
     std::string filename = argv[1];
-    cv::VideoCapture cap(filename);
+    cv::VideoCapture cap;
 
-    if (!cap.isOpened()) {
-        std::cerr << "Error: Could not open video file: " << filename << std::endl;
-        return 1;
+    // ERROR HANDLING: opening of file
+    if (!cap.open(filename)) {
+        std::cerr << "❌ Error: Could not open video file: " << filename << std::endl;
+        return -1;
     }
 
-    // Basic video information
+    //FRAME CODE
+    cv::Mat frame;
     double fps = cap.get(cv::CAP_PROP_FPS);
-    double frame_count = cap.get(cv::CAP_PROP_FRAME_COUNT);
-    double width = cap.get(cv::CAP_PROP_FRAME_WIDTH);
-    double height = cap.get(cv::CAP_PROP_FRAME_HEIGHT);
-    double duration = frame_count / fps;
+    int delay = 1000 / fps;
 
-    std::cout << "File: " << filename << std::endl;
-    std::cout << "Resolution: " << width << " x " << height << std::endl;
-    std::cout << "FPS: " << fps << std::endl;
-    std::cout << "Total frames: " << frame_count << std::endl;
-    std::cout << "Duration: " << duration << " seconds" << std::endl;
+    while (true) {
+        cap >> frame; // Read next frame
+        if (frame.empty()) {
+            std::cout << "End." << std::endl;
+            break;
+        }
+
+        cv::imshow("Video Playback Window", frame);
+        char key = (char)cv::waitKey(delay/2);
+        if (key == 27 || key == 'q') break; // press ESC or press q to quit
+    }
 
     cap.release();
+    cv::destroyAllWindows();
     return 0;
 }
