@@ -97,10 +97,52 @@ CMakeFiles/main.dir/src/functions/dummy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/functions/dummy.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/dummy.cpp -o CMakeFiles/main.dir/src/functions/dummy.cpp.s
 
+CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o: /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/gaussianblur.cpp
+CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o -MF CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o.d -o CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/gaussianblur.cpp
+
+CMakeFiles/main.dir/src/functions/gaussianblur.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/functions/gaussianblur.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/gaussianblur.cpp > CMakeFiles/main.dir/src/functions/gaussianblur.cpp.i
+
+CMakeFiles/main.dir/src/functions/gaussianblur.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/functions/gaussianblur.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/gaussianblur.cpp -o CMakeFiles/main.dir/src/functions/gaussianblur.cpp.s
+
+CMakeFiles/main.dir/src/functions/grayscale.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/functions/grayscale.cpp.o: /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/grayscale.cpp
+CMakeFiles/main.dir/src/functions/grayscale.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/functions/grayscale.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/functions/grayscale.cpp.o -MF CMakeFiles/main.dir/src/functions/grayscale.cpp.o.d -o CMakeFiles/main.dir/src/functions/grayscale.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/grayscale.cpp
+
+CMakeFiles/main.dir/src/functions/grayscale.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/functions/grayscale.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/grayscale.cpp > CMakeFiles/main.dir/src/functions/grayscale.cpp.i
+
+CMakeFiles/main.dir/src/functions/grayscale.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/functions/grayscale.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/grayscale.cpp -o CMakeFiles/main.dir/src/functions/grayscale.cpp.s
+
+CMakeFiles/main.dir/src/functions/sobel.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/functions/sobel.cpp.o: /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/sobel.cpp
+CMakeFiles/main.dir/src/functions/sobel.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/functions/sobel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/functions/sobel.cpp.o -MF CMakeFiles/main.dir/src/functions/sobel.cpp.o.d -o CMakeFiles/main.dir/src/functions/sobel.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/sobel.cpp
+
+CMakeFiles/main.dir/src/functions/sobel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/functions/sobel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/sobel.cpp > CMakeFiles/main.dir/src/functions/sobel.cpp.i
+
+CMakeFiles/main.dir/src/functions/sobel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/functions/sobel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/sobel.cpp -o CMakeFiles/main.dir/src/functions/sobel.cpp.s
+
 CMakeFiles/main.dir/src/loadwritevideo.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/loadwritevideo.cpp.o: /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/loadwritevideo.cpp
 CMakeFiles/main.dir/src/loadwritevideo.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/loadwritevideo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/loadwritevideo.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/loadwritevideo.cpp.o -MF CMakeFiles/main.dir/src/loadwritevideo.cpp.o.d -o CMakeFiles/main.dir/src/loadwritevideo.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/loadwritevideo.cpp
 
 CMakeFiles/main.dir/src/loadwritevideo.cpp.i: cmake_force
@@ -115,6 +157,9 @@ CMakeFiles/main.dir/src/loadwritevideo.cpp.s: cmake_force
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
 "CMakeFiles/main.dir/src/functions/dummy.cpp.o" \
+"CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o" \
+"CMakeFiles/main.dir/src/functions/grayscale.cpp.o" \
+"CMakeFiles/main.dir/src/functions/sobel.cpp.o" \
 "CMakeFiles/main.dir/src/loadwritevideo.cpp.o"
 
 # External object files for target main
@@ -122,6 +167,9 @@ main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.cpp.o
 main: CMakeFiles/main.dir/src/functions/dummy.cpp.o
+main: CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o
+main: CMakeFiles/main.dir/src/functions/grayscale.cpp.o
+main: CMakeFiles/main.dir/src/functions/sobel.cpp.o
 main: CMakeFiles/main.dir/src/loadwritevideo.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: /usr/local/lib/libopencv_gapi.4.12.0.dylib
@@ -140,7 +188,7 @@ main: /usr/local/lib/libopencv_flann.4.12.0.dylib
 main: /usr/local/lib/libopencv_imgproc.4.12.0.dylib
 main: /usr/local/lib/libopencv_core.4.12.0.dylib
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -177,6 +177,78 @@ src/functions/dummy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/dummy.cpp.s
 .PHONY : src/functions/dummy.cpp.s
 
+src/functions/gaussianblur.o: src/functions/gaussianblur.cpp.o
+.PHONY : src/functions/gaussianblur.o
+
+# target to build an object file
+src/functions/gaussianblur.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o
+.PHONY : src/functions/gaussianblur.cpp.o
+
+src/functions/gaussianblur.i: src/functions/gaussianblur.cpp.i
+.PHONY : src/functions/gaussianblur.i
+
+# target to preprocess a source file
+src/functions/gaussianblur.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/gaussianblur.cpp.i
+.PHONY : src/functions/gaussianblur.cpp.i
+
+src/functions/gaussianblur.s: src/functions/gaussianblur.cpp.s
+.PHONY : src/functions/gaussianblur.s
+
+# target to generate assembly for a file
+src/functions/gaussianblur.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/gaussianblur.cpp.s
+.PHONY : src/functions/gaussianblur.cpp.s
+
+src/functions/grayscale.o: src/functions/grayscale.cpp.o
+.PHONY : src/functions/grayscale.o
+
+# target to build an object file
+src/functions/grayscale.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/grayscale.cpp.o
+.PHONY : src/functions/grayscale.cpp.o
+
+src/functions/grayscale.i: src/functions/grayscale.cpp.i
+.PHONY : src/functions/grayscale.i
+
+# target to preprocess a source file
+src/functions/grayscale.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/grayscale.cpp.i
+.PHONY : src/functions/grayscale.cpp.i
+
+src/functions/grayscale.s: src/functions/grayscale.cpp.s
+.PHONY : src/functions/grayscale.s
+
+# target to generate assembly for a file
+src/functions/grayscale.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/grayscale.cpp.s
+.PHONY : src/functions/grayscale.cpp.s
+
+src/functions/sobel.o: src/functions/sobel.cpp.o
+.PHONY : src/functions/sobel.o
+
+# target to build an object file
+src/functions/sobel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/sobel.cpp.o
+.PHONY : src/functions/sobel.cpp.o
+
+src/functions/sobel.i: src/functions/sobel.cpp.i
+.PHONY : src/functions/sobel.i
+
+# target to preprocess a source file
+src/functions/sobel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/sobel.cpp.i
+.PHONY : src/functions/sobel.cpp.i
+
+src/functions/sobel.s: src/functions/sobel.cpp.s
+.PHONY : src/functions/sobel.s
+
+# target to generate assembly for a file
+src/functions/sobel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/sobel.cpp.s
+.PHONY : src/functions/sobel.cpp.s
+
 src/loadwritevideo.o: src/loadwritevideo.cpp.o
 .PHONY : src/loadwritevideo.o
 
@@ -216,6 +288,15 @@ help:
 	@echo "... src/functions/dummy.o"
 	@echo "... src/functions/dummy.i"
 	@echo "... src/functions/dummy.s"
+	@echo "... src/functions/gaussianblur.o"
+	@echo "... src/functions/gaussianblur.i"
+	@echo "... src/functions/gaussianblur.s"
+	@echo "... src/functions/grayscale.o"
+	@echo "... src/functions/grayscale.i"
+	@echo "... src/functions/grayscale.s"
+	@echo "... src/functions/sobel.o"
+	@echo "... src/functions/sobel.i"
+	@echo "... src/functions/sobel.s"
 	@echo "... src/loadwritevideo.o"
 	@echo "... src/loadwritevideo.i"
 	@echo "... src/loadwritevideo.s"

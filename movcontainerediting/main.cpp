@@ -3,13 +3,19 @@
 #include <string>
 #include "src/loadwritevideo.hpp"
 #include "src/functions/dummy.hpp"
+#include "src/functions/grayscale.hpp"
+#include "src/functions/gaussianblur.hpp"
+#include "src/functions/sobel.hpp"
 
 // help message
 void printHelp() {
     std::cout << "Usage: ./main <path-to-video-file> [flag]\n\n"
               << "Available flags:\n"
               << "  -h, --help      Show this help message\n"
-              << "  -d, --dummy     Use the dummy function (default)\n";
+              << "  -d, --dummy     Use the dummy function (default)\n"
+              << "  -g, --gray      Use the grayscale function\n"
+              << "  -b, --blur      Use the gaussian blur function\n"
+              << "  -s, --sobel     Use the sobel edge detection function\n";
 }
 
 int main(int argc, char** argv) {
@@ -38,7 +44,15 @@ int main(int argc, char** argv) {
         else if (flag == "-d" || flag == "--dummy") {
             func = dummy;
         } 
-
+        else if (flag == "-g" || flag == "--gray") {
+            func = grayscale;
+        }
+        else if (flag == "-b" || flag == "--blur") {
+            func = gaussianblur;
+        }
+        else if (flag == "-s" || flag == "--sobel") {
+            func = sobel;
+        } 
         //ADD NEW ABOVE HERE (func = whatever i want)
         else {
             std::cerr << "Unknown flag: " << flag << "\n";

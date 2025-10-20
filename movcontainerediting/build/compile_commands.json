@@ -13,6 +13,24 @@
 },
 {
   "directory": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/gaussianblur.cpp",
+  "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/gaussianblur.cpp",
+  "output": "CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o"
+},
+{
+  "directory": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/functions/grayscale.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/grayscale.cpp",
+  "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/grayscale.cpp",
+  "output": "CMakeFiles/main.dir/src/functions/grayscale.cpp.o"
+},
+{
+  "directory": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/functions/sobel.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/sobel.cpp",
+  "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/sobel.cpp",
+  "output": "CMakeFiles/main.dir/src/functions/sobel.cpp.o"
+},
+{
+  "directory": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/loadwritevideo.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/loadwritevideo.cpp",
   "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/loadwritevideo.cpp",
   "output": "CMakeFiles/main.dir/src/loadwritevideo.cpp.o"
