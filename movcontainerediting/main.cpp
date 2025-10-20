@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
 
     std::string filename = argv[1];
     cv::VideoCapture cap = loadVideo(filename);
-
+    // FIX so that user can choose which fucntion to use!
     if(!saveVideo(cap,dummy)){
         std::cout << "Failed to save video" << std::endl;
     }
