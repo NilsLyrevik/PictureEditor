@@ -4,6 +4,6 @@
 #include <opencv2/opencv.hpp>
 
 // function does nothing. literally
-cv::VideoCapture dummy(cv::VideoCapture cap);
+cv::Mat dummy(cv::Mat frame);
 
 #endif

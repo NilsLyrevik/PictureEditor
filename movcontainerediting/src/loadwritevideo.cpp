@@ -17,7 +17,7 @@ cv::VideoCapture loadVideo(const std::string& filename) {
 returns false if it fails anywhere along the way
 idea: maybe can be int/char/short to enhance error handling
 */
-bool saveVideo(cv::VideoCapture& cap, cv::VideoCapture (*func)(cv::VideoCapture)) {
+bool saveVideo(cv::VideoCapture& cap, cv::Mat (*func)(cv::Mat)) {
     //basic info needed for writer
     double fps = cap.get(cv::CAP_PROP_FPS);
     int width  = static_cast<int>(cap.get(cv::CAP_PROP_FRAME_WIDTH));
@@ -34,9 +34,7 @@ bool saveVideo(cv::VideoCapture& cap, cv::VideoCapture (*func)(cv::VideoCapture)
         std::cerr << "Error opening output file" << std::endl;
         return false;
     }
-    
-    cap = func(cap); // sexy
-    
+
 
     cap.set(cv::CAP_PROP_POS_FRAMES, 0); // reset to first frame
     cv::Mat frame;
@@ -44,6 +42,7 @@ bool saveVideo(cv::VideoCapture& cap, cv::VideoCapture (*func)(cv::VideoCapture)
         cap >> frame;
         if (frame.empty()) break;
 
+        frame = func(frame);
         writer.write(frame);  // write to output
         if (cv::waitKey(1) == 27) break;  // ESC to exit early
     }

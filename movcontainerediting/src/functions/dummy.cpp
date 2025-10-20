@@ -4,6 +4,6 @@
 /*
 function does nothing. literally
 */
-cv::VideoCapture dummy(cv::VideoCapture cap){
-    return cap; 
+cv::Mat dummy(cv::Mat frame){
+    return frame; 
 }

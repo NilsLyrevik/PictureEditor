@@ -21,6 +21,6 @@ cv::VideoCapture loadVideo(const std::string& filename);
  * @param cap The VideoCapture object containing frames to write.
  * @return true if the operation succeeded, false otherwise.
  */
-bool saveVideo(cv::VideoCapture& cap, cv::VideoCapture (*func)(cv::VideoCapture));
+bool saveVideo(cv::VideoCapture& cap, cv::Mat (*func)(cv::Mat));
 
 #endif
