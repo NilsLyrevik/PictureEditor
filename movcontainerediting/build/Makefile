@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/functions/dummy.o: src/functions/dummy.cpp.o
+.PHONY : src/functions/dummy.o
+
+# target to build an object file
+src/functions/dummy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/dummy.cpp.o
+.PHONY : src/functions/dummy.cpp.o
+
+src/functions/dummy.i: src/functions/dummy.cpp.i
+.PHONY : src/functions/dummy.i
+
+# target to preprocess a source file
+src/functions/dummy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/dummy.cpp.i
+.PHONY : src/functions/dummy.cpp.i
+
+src/functions/dummy.s: src/functions/dummy.cpp.s
+.PHONY : src/functions/dummy.s
+
+# target to generate assembly for a file
+src/functions/dummy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/dummy.cpp.s
+.PHONY : src/functions/dummy.cpp.s
+
 src/loadwritevideo.o: src/loadwritevideo.cpp.o
 .PHONY : src/loadwritevideo.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/functions/dummy.o"
+	@echo "... src/functions/dummy.i"
+	@echo "... src/functions/dummy.s"
 	@echo "... src/loadwritevideo.o"
 	@echo "... src/loadwritevideo.i"
 	@echo "... src/loadwritevideo.s"

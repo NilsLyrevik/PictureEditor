@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
+  "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/dummy.cpp" "CMakeFiles/main.dir/src/functions/dummy.cpp.o" "gcc" "CMakeFiles/main.dir/src/functions/dummy.cpp.o.d"
   "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/loadwritevideo.cpp" "CMakeFiles/main.dir/src/loadwritevideo.cpp.o" "gcc" "CMakeFiles/main.dir/src/loadwritevideo.cpp.o.d"
   )
 
