@@ -43,8 +43,20 @@
 },
 {
   "directory": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/dbscan.cpp",
+  "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/dbscan.cpp",
+  "output": "CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o"
+},
+{
+  "directory": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpoints.cpp",
   "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpoints.cpp",
   "output": "CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o"
+},
+{
+  "directory": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpointsdbscan.cpp",
+  "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpointsdbscan.cpp",
+  "output": "CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o"
 }
 ]

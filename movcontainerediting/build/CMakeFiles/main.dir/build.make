@@ -167,10 +167,24 @@ CMakeFiles/main.dir/src/loadwritevideo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/loadwritevideo.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/loadwritevideo.cpp -o CMakeFiles/main.dir/src/loadwritevideo.cpp.s
 
+CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o: /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/dbscan.cpp
+CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o -MF CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o.d -o CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/dbscan.cpp
+
+CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/dbscan.cpp > CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.i
+
+CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/dbscan.cpp -o CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.s
+
 CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o: /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpoints.cpp
 CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o -MF CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o.d -o CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpoints.cpp
 
 CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.i: cmake_force
@@ -181,6 +195,20 @@ CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpoints.cpp -o CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.s
 
+CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o: /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpointsdbscan.cpp
+CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o -MF CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o.d -o CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpointsdbscan.cpp
+
+CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpointsdbscan.cpp > CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.i
+
+CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpointsdbscan.cpp -o CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
@@ -190,7 +218,9 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/functions/grayscale.cpp.o" \
 "CMakeFiles/main.dir/src/functions/sobel.cpp.o" \
 "CMakeFiles/main.dir/src/loadwritevideo.cpp.o" \
-"CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o"
+"CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o" \
+"CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o" \
+"CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -202,7 +232,9 @@ main: CMakeFiles/main.dir/src/functions/gaussianblur.cpp.o
 main: CMakeFiles/main.dir/src/functions/grayscale.cpp.o
 main: CMakeFiles/main.dir/src/functions/sobel.cpp.o
 main: CMakeFiles/main.dir/src/loadwritevideo.cpp.o
+main: CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o
 main: CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o
+main: CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: /usr/local/lib/libopencv_gapi.4.12.0.dylib
 main: /usr/local/lib/libopencv_highgui.4.12.0.dylib
@@ -220,7 +252,7 @@ main: /usr/local/lib/libopencv_flann.4.12.0.dylib
 main: /usr/local/lib/libopencv_imgproc.4.12.0.dylib
 main: /usr/local/lib/libopencv_core.4.12.0.dylib
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

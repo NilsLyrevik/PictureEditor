@@ -3,6 +3,8 @@
 #include <string>
 #include "sobel.hpp"
 #include "../pointfunctions/drawpoints.hpp"
+#include "../pointfunctions/drawpointsdbscan.hpp"
+#include "../pointfunctions/dbscan.hpp"
 
 const unsigned char threshold = 100;
 
@@ -20,8 +22,13 @@ cv::Mat drawedges (cv::Mat frame){
 
         }
     }
-
+    /*
+    use this to not color clusters using dbscan
     drawpoints(points, frame); // edits each frame (returns void)
+    */
+    std::vector<DBSCANPoint> dbpoints = createDB(points);
+    dbscan(dbpoints,10.0,2);
+    drawpointsdbscan(dbpoints, frame, true);
 
     return frame;
 
