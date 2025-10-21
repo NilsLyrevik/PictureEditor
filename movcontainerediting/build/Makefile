@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/functions/drawedges.o: src/functions/drawedges.cpp.o
+.PHONY : src/functions/drawedges.o
+
+# target to build an object file
+src/functions/drawedges.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/drawedges.cpp.o
+.PHONY : src/functions/drawedges.cpp.o
+
+src/functions/drawedges.i: src/functions/drawedges.cpp.i
+.PHONY : src/functions/drawedges.i
+
+# target to preprocess a source file
+src/functions/drawedges.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/drawedges.cpp.i
+.PHONY : src/functions/drawedges.cpp.i
+
+src/functions/drawedges.s: src/functions/drawedges.cpp.s
+.PHONY : src/functions/drawedges.s
+
+# target to generate assembly for a file
+src/functions/drawedges.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/functions/drawedges.cpp.s
+.PHONY : src/functions/drawedges.cpp.s
+
 src/functions/dummy.o: src/functions/dummy.cpp.o
 .PHONY : src/functions/dummy.o
 
@@ -273,6 +297,30 @@ src/loadwritevideo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/loadwritevideo.cpp.s
 .PHONY : src/loadwritevideo.cpp.s
 
+src/pointfunctions/drawpoints.o: src/pointfunctions/drawpoints.cpp.o
+.PHONY : src/pointfunctions/drawpoints.o
+
+# target to build an object file
+src/pointfunctions/drawpoints.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o
+.PHONY : src/pointfunctions/drawpoints.cpp.o
+
+src/pointfunctions/drawpoints.i: src/pointfunctions/drawpoints.cpp.i
+.PHONY : src/pointfunctions/drawpoints.i
+
+# target to preprocess a source file
+src/pointfunctions/drawpoints.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.i
+.PHONY : src/pointfunctions/drawpoints.cpp.i
+
+src/pointfunctions/drawpoints.s: src/pointfunctions/drawpoints.cpp.s
+.PHONY : src/pointfunctions/drawpoints.s
+
+# target to generate assembly for a file
+src/pointfunctions/drawpoints.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.s
+.PHONY : src/pointfunctions/drawpoints.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -285,6 +333,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/functions/drawedges.o"
+	@echo "... src/functions/drawedges.i"
+	@echo "... src/functions/drawedges.s"
 	@echo "... src/functions/dummy.o"
 	@echo "... src/functions/dummy.i"
 	@echo "... src/functions/dummy.s"
@@ -300,6 +351,9 @@ help:
 	@echo "... src/loadwritevideo.o"
 	@echo "... src/loadwritevideo.i"
 	@echo "... src/loadwritevideo.s"
+	@echo "... src/pointfunctions/drawpoints.o"
+	@echo "... src/pointfunctions/drawpoints.i"
+	@echo "... src/pointfunctions/drawpoints.s"
 .PHONY : help
 
 

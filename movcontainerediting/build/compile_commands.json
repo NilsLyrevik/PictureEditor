@@ -7,6 +7,12 @@
 },
 {
   "directory": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/functions/drawedges.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/drawedges.cpp",
+  "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/drawedges.cpp",
+  "output": "CMakeFiles/main.dir/src/functions/drawedges.cpp.o"
+},
+{
+  "directory": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/functions/dummy.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/dummy.cpp",
   "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/functions/dummy.cpp",
   "output": "CMakeFiles/main.dir/src/functions/dummy.cpp.o"
@@ -34,5 +40,11 @@
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/loadwritevideo.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/loadwritevideo.cpp",
   "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/loadwritevideo.cpp",
   "output": "CMakeFiles/main.dir/src/loadwritevideo.cpp.o"
+},
+{
+  "directory": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o -c /Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpoints.cpp",
+  "file": "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpoints.cpp",
+  "output": "CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o"
 }
 ]

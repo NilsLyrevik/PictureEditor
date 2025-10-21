@@ -6,6 +6,7 @@
 #include "src/functions/grayscale.hpp"
 #include "src/functions/gaussianblur.hpp"
 #include "src/functions/sobel.hpp"
+#include "src/functions/drawedges.hpp"
 
 // help message
 void printHelp() {
@@ -15,7 +16,8 @@ void printHelp() {
               << "  -d, --dummy     Use the dummy function (default)\n"
               << "  -g, --gray      Use the grayscale function\n"
               << "  -b, --blur      Use the gaussian blur function\n"
-              << "  -s, --sobel     Use the sobel edge detection function\n";
+              << "  -s, --sobel     Use the sobel edge detection function\n"
+              << "  -e, --edge      Use the sobel edge detection function and plot edges\n";
 }
 
 int main(int argc, char** argv) {
@@ -52,8 +54,11 @@ int main(int argc, char** argv) {
         }
         else if (flag == "-s" || flag == "--sobel") {
             func = sobel;
-        } 
-        //ADD NEW ABOVE HERE (func = whatever i want)
+        }
+        else if (flag == "-e" || flag == "--edge") {
+            func = drawedges;
+        }
+        //ADD NEW ABOVE HERE (func = whatever I want)
         else {
             std::cerr << "Unknown flag: " << flag << "\n";
             printHelp();

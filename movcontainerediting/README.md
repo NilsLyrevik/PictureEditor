@@ -70,6 +70,7 @@ Available Flags
     -g, --gray      Convert video to grayscale
     -b, --blur      Apply Gaussian blur
     -s, --sobel     Apply Sobel edge detection
+    -e, --edge      Apply Sobel with thresholding over original video
 
 If no flag is provided, the dummy function runs by default.
 
@@ -86,6 +87,7 @@ Project Structure
     │   ├── loadwritevideo.hpp
     │   └── functions/
     │       ├── dummy.cpp / .hpp
+    │       ├── drawedges.cpp / .hpp
     │       ├── grayscale.cpp / .hpp
     │       ├── gaussianblur.cpp / .hpp
     │       └── sobel.cpp / .hpp
