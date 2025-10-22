@@ -297,30 +297,6 @@ src/loadwritevideo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/loadwritevideo.cpp.s
 .PHONY : src/loadwritevideo.cpp.s
 
-src/pointfunctions/dbscan.o: src/pointfunctions/dbscan.cpp.o
-.PHONY : src/pointfunctions/dbscan.o
-
-# target to build an object file
-src/pointfunctions/dbscan.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o
-.PHONY : src/pointfunctions/dbscan.cpp.o
-
-src/pointfunctions/dbscan.i: src/pointfunctions/dbscan.cpp.i
-.PHONY : src/pointfunctions/dbscan.i
-
-# target to preprocess a source file
-src/pointfunctions/dbscan.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.i
-.PHONY : src/pointfunctions/dbscan.cpp.i
-
-src/pointfunctions/dbscan.s: src/pointfunctions/dbscan.cpp.s
-.PHONY : src/pointfunctions/dbscan.s
-
-# target to generate assembly for a file
-src/pointfunctions/dbscan.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.s
-.PHONY : src/pointfunctions/dbscan.cpp.s
-
 src/pointfunctions/drawpoints.o: src/pointfunctions/drawpoints.cpp.o
 .PHONY : src/pointfunctions/drawpoints.o
 
@@ -399,9 +375,6 @@ help:
 	@echo "... src/loadwritevideo.o"
 	@echo "... src/loadwritevideo.i"
 	@echo "... src/loadwritevideo.s"
-	@echo "... src/pointfunctions/dbscan.o"
-	@echo "... src/pointfunctions/dbscan.i"
-	@echo "... src/pointfunctions/dbscan.s"
 	@echo "... src/pointfunctions/drawpoints.o"
 	@echo "... src/pointfunctions/drawpoints.i"
 	@echo "... src/pointfunctions/drawpoints.s"

@@ -6,7 +6,7 @@
 #include "../pointfunctions/drawpointsdbscan.hpp"
 #include "../pointfunctions/dbscan.hpp"
 
-const unsigned char threshold = 100;
+const unsigned char threshold = 95;
 
 cv::Mat drawedges (cv::Mat frame){
     cv::Mat edgeframe = sobel(frame);

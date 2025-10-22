@@ -14,8 +14,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/functions/sobel.cpp.o.d"
   "CMakeFiles/main.dir/src/loadwritevideo.cpp.o"
   "CMakeFiles/main.dir/src/loadwritevideo.cpp.o.d"
-  "CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o"
-  "CMakeFiles/main.dir/src/pointfunctions/dbscan.cpp.o.d"
   "CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o"
   "CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o.d"
   "CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o"

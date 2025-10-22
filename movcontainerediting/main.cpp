@@ -1,6 +1,7 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 #include <string>
+#include <chrono>
 #include "src/loadwritevideo.hpp"
 #include "src/functions/dummy.hpp"
 #include "src/functions/grayscale.hpp"
@@ -68,9 +69,14 @@ int main(int argc, char** argv) {
         std::cout << "No flag provided, running dummy by default.\n";
     }
 
+    auto start = std::chrono::high_resolution_clock::now();
+
     if (!saveVideo(cap, func)) {
         std::cout << "Failed to save video" << std::endl;
     }
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsed = end - start;
+    std::cout << "Execution time: " << elapsed.count() << " s\n";
 
     cv::destroyAllWindows();
     return 0;
