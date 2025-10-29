@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o.d"
   "CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o"
   "CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o.d"
+  "CMakeFiles/main.dir/src/removebackground/removebackground.cpp.o"
+  "CMakeFiles/main.dir/src/removebackground/removebackground.cpp.o.d"
   "main"
   "main.pdb"
 )

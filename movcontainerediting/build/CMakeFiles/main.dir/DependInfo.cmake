@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/loadwritevideo.cpp" "CMakeFiles/main.dir/src/loadwritevideo.cpp.o" "gcc" "CMakeFiles/main.dir/src/loadwritevideo.cpp.o.d"
   "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpoints.cpp" "CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o" "gcc" "CMakeFiles/main.dir/src/pointfunctions/drawpoints.cpp.o.d"
   "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/pointfunctions/drawpointsdbscan.cpp" "CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o" "gcc" "CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.o.d"
+  "/Users/nilslyrevik/Desktop/Code/GitHubRepos/pictureeditor/movcontainerediting/src/removebackground/removebackground.cpp" "CMakeFiles/main.dir/src/removebackground/removebackground.cpp.o" "gcc" "CMakeFiles/main.dir/src/removebackground/removebackground.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

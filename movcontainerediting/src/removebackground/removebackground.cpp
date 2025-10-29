@@ -7,70 +7,65 @@ Pipeline:
     4.Apply morphological operations (Dilate -> Erode) to clean up
     5. Find contours (little bit confused as to what to do with this later...)
 */
-
 #include <opencv2/opencv.hpp>
 #include <iostream>
 #include "../functions/grayscale.hpp"
 
-/*
-function does alot. like a little bit to much but whatever
-    --> Will probobly have to execute this on a child thread or something. dont wanna rewrite my whole main... holy guacamole
-*/
 bool RemoveBackground(cv::VideoCapture& cap, bool mog2) {
     double fps = cap.get(cv::CAP_PROP_FPS);
     int width  = static_cast<int>(cap.get(cv::CAP_PROP_FRAME_WIDTH));
     int height = static_cast<int>(cap.get(cv::CAP_PROP_FRAME_HEIGHT));
 
-    std::system("mkdir -p ../../output");
+    std::system("mkdir -p ../output");
 
-    cv::VideoWriter writer("../../output/output.mp4",
-                           cv::VideoWriter::fourcc('a','v','c','1'),
-                           fps,
-                           cv::Size(width, height));
+    // Writer will save a video with same resolution as the input
+    cv::VideoWriter writer(
+        "../output/output.mp4",
+        cv::VideoWriter::fourcc('a', 'v', 'c', '1'),
+        fps,
+        cv::Size(width, height)
+    );
+
+    if (!writer.isOpened()) {
+        std::cerr << "Error: Could not open output file for writing." << std::endl;
+        return false;
+    }
 
     cap.set(cv::CAP_PROP_POS_FRAMES, 0);
-    cv::Mat frame, fgMask;
+    cv::Mat frame, fgMask, mask3ch;
 
-    // BACKGROUND SUBTRACTOR STUFF
+    // Background subtractor
     cv::Ptr<cv::BackgroundSubtractor> pBackSub;
-    if (mog2) {
+    if (mog2){
         pBackSub = cv::createBackgroundSubtractorMOG2();
-    } else {
+    }
+    else{
         pBackSub = cv::createBackgroundSubtractorKNN();
     }
 
     while (true) {
         cap >> frame;
-        if (frame.empty())
-            break;
+        if (frame.empty()) break;
 
-        // update the background model
+        // Compute the foreground mask
         pBackSub->apply(frame, fgMask);
 
-        // get the frame number and write it on the current frame
-        cv::rectangle(frame, cv::Point(10, 2), cv::Point(100, 20),
-                      cv::Scalar(255, 255, 255), -1);
-        std::stringstream ss;
-        ss << cap.get(cv::CAP_PROP_POS_FRAMES);
-        std::string frameNumberString = ss.str();
-        cv::putText(frame, frameNumberString.c_str(), cv::Point(15, 15),
-                    cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 0));
+        //remove noise
+        /*
+        cv::threshold(fgMask, fgMask, 128, 255, cv::THRESH_BINARY);
+        cv::morphologyEx(fgMask, fgMask, cv::MORPH_OPEN, cv::Mat());
+        cv::morphologyEx(fgMask, fgMask, cv::MORPH_CLOSE, cv::Mat());
+        */
 
-        // show the current frame and the fg mask
-        cv::imshow("Frame", frame);
-        cv::imshow("FG Mask", fgMask);
+        // Convert to 3-channel image before saving
+        cv::cvtColor(fgMask, mask3ch, cv::COLOR_GRAY2BGR);
 
-        cv::Mat grayMask, combined;
-        cv::cvtColor(fgMask, grayMask, cv::COLOR_GRAY2BGR); // convert mask to 3-channel
-        cv::hconcat(frame, grayMask, combined);              // combine side by side
-        writer.write(combined);
-
-        if (cv::waitKey(1) == 27) break; // ESC to exit early
+        // Write processed mask to video
+        writer.write(mask3ch);
     }
 
     cap.release();
     writer.release();
-    cv::destroyAllWindows();
 
-    return true; // if whole function executes correctly
+    return true;
 }

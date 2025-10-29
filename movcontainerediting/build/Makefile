@@ -345,6 +345,30 @@ src/pointfunctions/drawpointsdbscan.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/pointfunctions/drawpointsdbscan.cpp.s
 .PHONY : src/pointfunctions/drawpointsdbscan.cpp.s
 
+src/removebackground/removebackground.o: src/removebackground/removebackground.cpp.o
+.PHONY : src/removebackground/removebackground.o
+
+# target to build an object file
+src/removebackground/removebackground.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/removebackground/removebackground.cpp.o
+.PHONY : src/removebackground/removebackground.cpp.o
+
+src/removebackground/removebackground.i: src/removebackground/removebackground.cpp.i
+.PHONY : src/removebackground/removebackground.i
+
+# target to preprocess a source file
+src/removebackground/removebackground.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/removebackground/removebackground.cpp.i
+.PHONY : src/removebackground/removebackground.cpp.i
+
+src/removebackground/removebackground.s: src/removebackground/removebackground.cpp.s
+.PHONY : src/removebackground/removebackground.s
+
+# target to generate assembly for a file
+src/removebackground/removebackground.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/removebackground/removebackground.cpp.s
+.PHONY : src/removebackground/removebackground.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -381,6 +405,9 @@ help:
 	@echo "... src/pointfunctions/drawpointsdbscan.o"
 	@echo "... src/pointfunctions/drawpointsdbscan.i"
 	@echo "... src/pointfunctions/drawpointsdbscan.s"
+	@echo "... src/removebackground/removebackground.o"
+	@echo "... src/removebackground/removebackground.i"
+	@echo "... src/removebackground/removebackground.s"
 .PHONY : help
 
 

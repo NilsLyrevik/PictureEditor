@@ -6,4 +6,4 @@
 
 bool RemoveBackground(cv::VideoCapture& cap, bool mog2 = true);
 
-#endif // REMOVEBACKGROUND_HPP
+#endif

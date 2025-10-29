@@ -8,17 +8,19 @@
 #include "src/functions/gaussianblur.hpp"
 #include "src/functions/sobel.hpp"
 #include "src/functions/drawedges.hpp"
+#include "src/removebackground/removebackground.hpp"  // <-- add this
 
 // help message
 void printHelp() {
     std::cout << "Usage: ./main <path-to-video-file> [flag]\n\n"
               << "Available flags:\n"
-              << "  -h, --help      Show this help message\n"
-              << "  -d, --dummy     Use the dummy function (default)\n"
-              << "  -g, --gray      Use the grayscale function\n"
-              << "  -b, --blur      Use the gaussian blur function\n"
-              << "  -s, --sobel     Use the sobel edge detection function\n"
-              << "  -e, --edge      Use the sobel edge detection function and plot edges\n";
+              << "  -h, --help        Show this help message\n"
+              << "  -d, --dummy       Use the dummy function (default)\n"
+              << "  -g, --gray        Use the grayscale function\n"
+              << "  -b, --blur        Use the gaussian blur function\n"
+              << "  -s, --sobel       Use the sobel edge detection function\n"
+              << "  -e, --edge        Use the sobel edge detection function and plot edges\n"
+              << "  -r, --removebg    Run background removal (MOG2 by default, KNN if 'knn' flag provided)\n";
 }
 
 int main(int argc, char** argv) {
@@ -36,6 +38,8 @@ int main(int argc, char** argv) {
 
     // default function pointer (dummy)
     cv::Mat (*func)(cv::Mat) = dummy;
+    bool useRemoveBackground = false;
+    bool useMOG2 = true; // default for RemoveBackground
 
     // handle flags
     if (argc >= 3) {
@@ -59,7 +63,12 @@ int main(int argc, char** argv) {
         else if (flag == "-e" || flag == "--edge") {
             func = drawedges;
         }
-        //ADD NEW ABOVE HERE (func = whatever I want)
+        else if (flag == "-r" || flag == "--removebg") {
+            useRemoveBackground = true;
+            if (argc >= 4 && std::string(argv[3]) == "knn") {
+                useMOG2 = false; // optional third arg for method choice
+            }
+        }
         else {
             std::cerr << "Unknown flag: " << flag << "\n";
             printHelp();
@@ -71,9 +80,17 @@ int main(int argc, char** argv) {
 
     auto start = std::chrono::high_resolution_clock::now();
 
-    if (!saveVideo(cap, func)) {
-        std::cout << "Failed to save video" << std::endl;
+    bool success = false;
+    if (useRemoveBackground) {
+        success = RemoveBackground(cap, useMOG2);
+    } else {
+        success = saveVideo(cap, func);
     }
+
+    if (!success) {
+        std::cout << "Failed to process video" << std::endl;
+    }
+
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end - start;
     std::cout << "Execution time: " << elapsed.count() << " s\n";
